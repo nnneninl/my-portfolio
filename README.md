@@ -2,7 +2,7 @@
 
 This is my personal website portfolio, build with **Next.js**, **Tailwind CSS**, **Framer Motion**, **shadcn/ui**, and **react-icons**.
 
-🌐 **Live Demo**: [https://neilfancis.vercel.app](https://neilfrancis.vercel.app)
+🌐 **Live Demo**: [https://neilfrancis.vercel.app](https://neilfrancis.vercel.app)
 
 ## 🔥 Tech Stack
 
