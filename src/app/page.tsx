@@ -109,10 +109,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
-            id="experiences"
+            id="experience"
           >
             <h2 className="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
-              Experiences
+              Experience
             </h2>
 
             <div className="space-y-2">
