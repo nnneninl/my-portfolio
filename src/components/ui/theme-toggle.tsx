@@ -14,7 +14,7 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
-      className="rounded-full"
+      className="rounded-full cursor-pointer hover:scale-120"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <FaSun className="absolute h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"></FaSun>
