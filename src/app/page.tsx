@@ -54,21 +54,21 @@ export default function Home() {
                 Crafting Web Experiences & Exploring Cloud Tech
               </h2>
               <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-                I'm a Computer Science graduate with a strong passion for web
-                development. During my thesis, I honed my skills in frontend
+                I&apos;m a Computer Science graduate with a strong passion for
+                web development. During my thesis, I honed my skills in frontend
                 development using React.js, where I fell in love with building
                 intuitive and dynamic user interfaces. I primarily develop in
                 Linux using Tmux and Neovim but am flexible and comfortable
                 working with Windows and Visual Studio Code when needed.
               </p>
               <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
-                While my main focus is on frontend development with React, I'm
-                eager to expand my skills into backend development using
-                JavaScript, TypeScript, or GoLang. Additionaly, I'm highly
-                interested in DevOps and cloud infrastructure, aiming to build
-                scalable and efficient solutions in the future. I also have
-                experience with C#, Java, and Python from my college courses,
-                making me adaptable to different tech stacks.
+                While my main focus is on frontend development with React,
+                I&apos;m eager to expand my skills into backend development
+                using JavaScript, TypeScript, or GoLang. Additionaly, I&apos;m
+                highly interested in DevOps and cloud infrastructure, aiming to
+                build scalable and efficient solutions in the future. I also
+                have experience with C#, Java, and Python from my college
+                courses, making me adaptable to different tech stacks.
               </p>
             </motion.div>
 
