@@ -2,7 +2,7 @@
 
 This is my personal website portfolio, build with **Next.js**, **Tailwind CSS**, **Framer Motion**, **shadcn/ui**, and **react-icons**.
 
-🌐 Live Demo: [https://neilfancis.vercel.app](https://neilfrancis.vercel.app)
+🌐 **Live Demo**: [https://neilfancis.vercel.app](https://neilfrancis.vercel.app)
 
 ## 🔥 Tech Stack
 
@@ -18,3 +18,7 @@ This is my personal website portfolio, build with **Next.js**, **Tailwind CSS**,
 ✅ Smooth animations with Framer Motion  
 ✅ Dark and Light Mode support  
 ✅ Fast performance optimized Next.js build
+
+## 📝 License
+
+This project is licensed under the MIT License - Feel free to use and modify it as you like.
