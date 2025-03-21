@@ -263,6 +263,7 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
+            <p className="text-gray-500">© 2025 Neil Francis Palmares</p>
           </motion.section>
         </main>
       </div>
