@@ -1,12 +1,15 @@
 "use client";
 
 // lib
+import Image from "next/image";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 // local
+import projectPlaceholder from "../../public/placeholder-project.png";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Home() {
@@ -84,13 +87,15 @@ export default function Home() {
                 Resume
               </Button>
               <Link
-                href="#"
+                href="https://github.com/nnneninl"
+                target="_blank"
                 className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               >
                 <FaGithub className="w-6 h-6" />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/neil-francis-m-palmares"
+                target="_blank"
                 className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
               >
                 <FaLinkedin className="w-6 h-6" />
@@ -201,6 +206,62 @@ export default function Home() {
                 excelled in Web Development-related courses, which fueled my
                 passion for building scalable and dynamic web applications.
               </p>
+            </div>
+          </motion.section>
+
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+            id="projects"
+          >
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
+              Projects
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <CardContent className="p-4">
+                  <Image
+                    src={projectPlaceholder}
+                    alt="Project Image"
+                    className="rounded-lg mb-4"
+                  ></Image>
+                  <div className="flex items-center justify-betweem">
+                    <div>
+                      <h3 className="font-medium">My Arch Install</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        Shell Script
+                      </p>
+                    </div>
+                    <Button variant="ghost" size="icon">
+                      →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <CardContent className="p-4">
+                  <Image
+                    src={projectPlaceholder}
+                    alt="Project Image"
+                    className="rounded-lg mb-4"
+                  ></Image>
+                  <div className="flex items-center justify-betweem">
+                    <div>
+                      <h3 className="font-medium">Debbie</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        Shell Script
+                      </p>
+                    </div>
+                    <Button variant="ghost" size="icon">
+                      →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </motion.section>
         </main>
