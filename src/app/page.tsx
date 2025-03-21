@@ -19,7 +19,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-between mb-12"
         >
-          <div className="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center bg-black text-white dark:bg-white dark:text-black transition-colors duration-300 hover:font-bold">
+          <div className="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-r from-[#d0486e] to-[#7560c9] text-white font-bold text-2xl">
             NF
           </div>
           <ThemeToggle />
@@ -53,6 +53,7 @@ export default function Home() {
               <h2 className="text-lg font-semibold">
                 Crafting Web Experiences & Exploring Cloud Tech
               </h2>
+
               <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
                 I&apos;m a Computer Science graduate with a strong passion for
                 web development. During my thesis, I honed my skills in frontend
@@ -61,6 +62,7 @@ export default function Home() {
                 Linux using Tmux and Neovim but am flexible and comfortable
                 working with Windows and Visual Studio Code when needed.
               </p>
+
               <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2xl">
                 While my main focus is on frontend development with React,
                 I&apos;m eager to expand my skills into backend development
@@ -101,6 +103,71 @@ export default function Home() {
               </Link>
             </motion.div>
           </section>
+
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+            id="experiences"
+          >
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
+              Experiences
+            </h2>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    September, 2024 - December, 2024
+                  </p>
+                  <p className="font-medium">
+                    Intern - Construction Safety and Health Planning
+                  </p>
+                  <p className="text-[#7560c9]">
+                    Department of Labor and Employment - Region 6
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                During my internship at the Department of Labor and Employment -
+                Region 6, I was assigned to the Construction Safety and Health
+                Program (CSHP) unit. I provided general front desk support,
+                assisting clients and answering inquiries. My responsibilities
+                included reviewing and ensuring completeness of submitted CSHP
+                documents, as well as maintaining and updating detailed records
+                of CSHP applications.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    February, 2024 - May, 2024
+                  </p>
+                  <p className="font-medium">
+                    On-The-Job Trainee - IT & Network Operations
+                  </p>
+                  <p className="text-[#7560c9]">
+                    Office of Civil Defense - Iloilo Provincial Capitol - Region
+                    6
+                  </p>
+                </div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                During my On-The-Job training, I gained hands-on experience in
+                IT and network operations, including the installation of CCTV
+                cameras, setting up routers and PhoneLink, and configuring
+                multiple displays into a single system unit. I also worked on
+                network infrastructure tasks such as Ethernet cable crimping,
+                NAS interface familiarization, and internet installation.
+                Additionally, I developed skills in ArcGIS basics and
+                geo-tracking, as well as OS installation for both Linux and
+                Windows systems.
+              </p>
+            </div>
+          </motion.section>
         </main>
       </div>
     </div>
