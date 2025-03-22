@@ -83,9 +83,15 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="flex items-center gap-3"
             >
-              <Button className="rounded-full bg-gradient-to-r from-[#d0486e] to-[#7560c9] text-white transition-transform hover:scale-105">
-                Resume
-              </Button>
+              <Link
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="rounded-full bg-gradient-to-r from-[#d0486e] to-[#7560c9] text-white transition-transform hover:scale-105 cursor-pointer">
+                  Resumé
+                </Button>
+              </Link>
               <Link
                 href="https://github.com/nnneninl"
                 target="_blank"
