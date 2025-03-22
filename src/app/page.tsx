@@ -269,6 +269,99 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
+          </motion.section>
+
+          <motion.section
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8"
+            id="certifications"
+          >
+            <h2 className="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
+              Certifications
+            </h2>
+
+            <div className="grid grid-cols-1 gap-3">
+              <Link
+                href="/cert-cybersecurity.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <CardContent className="p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-medium">
+                          Cybersecurity Essentials
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          December 17, 2023
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link
+                href="/cert-iot.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <CardContent className="p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-medium">
+                          Introduction to IoT and Digital Transformation
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          July 21, 2023
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Link
+                href="/cert-it.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                  <CardContent className="p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-medium">
+                          IT Essentials: PC Hardware and Software
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                          May 20, 2023
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+
+              <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <CardContent className="p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-medium">
+                        Commission of Civil Service Professional
+                      </h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        October 15, 2024
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
             <p className="text-gray-500">© 2025 Neil Francis Palmares</p>
           </motion.section>
         </main>
