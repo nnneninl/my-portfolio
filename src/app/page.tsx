@@ -6,6 +6,7 @@ import { Certifications } from "@/components/custom/certifications";
 import { Education } from "@/components/custom/education";
 import { Experience } from "@/components/custom/experience";
 import { Header } from "@/components/custom/header";
+import { LanguagesAndTools } from "@/components/custom/languages-and-tools";
 import { Projects } from "@/components/custom/projects";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <Experience />
           <Education />
           <Projects />
+          <LanguagesAndTools />
           <Certifications />
 
           <p className="text-gray-500">© 2025 Neil Francis Palmares</p>
