@@ -338,7 +338,7 @@ export default function Home() {
                           IT Essentials: PC Hardware and Software
                         </h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">
-                          May 20, 2023
+                          May 20, 2022
                         </p>
                       </div>
                     </div>
