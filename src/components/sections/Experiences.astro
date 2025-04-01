@@ -1,0 +1,39 @@
+---
+import { experiences } from "@/data/experiences";
+---
+
+<section class="space-y-8 slide-up">
+  <h2 class="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
+    Experience
+  </h2>
+
+  {experiences.map((experience) => (
+    <div class="space-y-2">
+      <div class="flex items-center justify-between">
+        <div class="space-y-1">
+          <p class="text-gray-600 dark:text-gray-400 text-sm">{experience.date}</p>
+          <p class="font-medium">{experience.title}</p>
+          <p class="text-[#7560c9]">{experience.company}</p>
+        </div>
+      </div>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">{experience.description}</p>
+    </div>
+  ))}
+</section>
+
+<style>
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .slide-up {
+    animation: fadeInSlideUp 1s ease-out forwards;
+  }
+</style>
