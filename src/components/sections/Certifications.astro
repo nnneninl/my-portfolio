@@ -1,0 +1,48 @@
+---
+import { certifications } from  "@/data/certifications";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+---
+
+<section class="space-y-8 slide-up">
+  <h2 class="text-3xl font-semibold bg-gradient-to-r from-[#d0486e] to-[#7560c9] bg-clip-text text-transparent inline-block">
+    Certifications
+  </h2>
+
+  <div class="grid grid-cols-1 gap-3">
+    {certifications.map((certificate) => (
+    <a href={certificate.href} target="_blank" rel="noopener noreferrer">
+      <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <CardContent className="p-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-medium">{certificate.title}</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">{certificate.date}</p>
+            </div>
+          <Button variant="ghost" size="icon">
+            →
+          </Button>
+          </div>
+        </CardContent>
+      </Card>
+    </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .slide-up {
+    animation: fadeInSlideUp 1s ease-out forwards;
+  }
+</style>
