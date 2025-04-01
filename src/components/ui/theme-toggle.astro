@@ -1,0 +1,33 @@
+---
+import { Button } from "./button";
+import { Moon, Sun } from "lucide-react";
+---
+
+<Button id="theme-toggle" variant="ghost" size="icon" className="rounded-full cursor-pointer hover:scale-120">
+  <Sun className="dark:hidden" />
+  <Moon className="hidden dark:block" />
+</Button>
+
+<script>
+  const button = document.getElementById("theme-toggle");
+  updateButton(button);
+
+  document.addEventListener("astro:before-swap", ({ newDocument }) => {
+    const button = newDocument.getElementById("theme-toggle");
+    updateButton(button);
+  });
+
+  function updateButton(button: HTMLElement | null) {
+    if (!button) {
+      return console.warn("Theme Toggle button was not found");
+    }
+
+    button.addEventListener("click", function () {
+      const out = document.documentElement.classList.toggle("dark");
+      this.title = `Switch to ${out ? "light" : "dark"} mode`;
+    });
+
+    const isDark = document.documentElement.classList.contains("dark");
+    button.title = `Switch to ${isDark ? "light" : "dark"} mode`;
+  }
+</script>

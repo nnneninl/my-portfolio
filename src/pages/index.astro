@@ -1,38 +1,13 @@
 ---
-import Header from "../components/ui/Header.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="app">
-    <div class="container">
-      <Header />
-      <!-- Header -->
-      <!-- About Me -->
-      <!-- Experience -->
-      <!-- Eduation -->
-      <!-- Projects -->
-      <!-- Languages and Tools -->
-      <!-- Certifications -->
-    </div>
+  <div class="mx-auto max-w-xl px-4 py-20">
+    <Header />
+      <main class="space-y-10">
+        <slot />
+      </main>
   </div>
-</Layout>
-
-<style>
-  .app {
-    background-color: #ffffff;
-    min-height: 100vh;
-    transition: all 300ms ease-in-out;
-  }
-
-  :global(.dark) .app {
-    background-color: #000000;
-  }
-
-  .container {
-    margin-inline: auto;
-    max-width: 36rem;
-    padding-inline: 1rem;
-    padding-block: 5rem;
-  }
-</style>
+</Layout >

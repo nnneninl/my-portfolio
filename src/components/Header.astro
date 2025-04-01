@@ -1,0 +1,27 @@
+---
+import ThemeToggle from "./ui/theme-toggle.astro";
+---
+
+<header class="flex items-center justify-between mb-12">
+  <div class="w-20 h-20 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-r from-[#d0486e] to-[#7560c9] text-white font-bold text-2xl">
+    NF
+  </div>
+  <ThemeToggle />
+</header>
+
+<style>
+  @keyframes fadeInSlide {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  header {
+    animation: fadeInSlide 0.8s ease-out forwards;
+  }
+</style>
