@@ -69,7 +69,7 @@ export const languagesAndTools = [
   },
   {
     src: "/icons/vscode.svg",
-    name: "Visual Studio Code",
+    name: "VS Code",
   },
   {
     src: "/icons/arch.svg",
