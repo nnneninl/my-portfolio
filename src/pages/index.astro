@@ -4,6 +4,7 @@ import Header from "@/components/Header.astro";
 import AboutMe from "@/components/sections/AboutMe.astro";
 import Experience from "@/components/sections/Experience.astro";
 import Education from "@/components/sections/Education.astro";
+import Projects from "@/components/sections/Projects";
 import LanguagesAndTools from "@/components/sections/LanguagesAndTools.astro";
 import Certifications from "@/components/sections/Certifications.astro";
 import Footer from "@/components/Footer.astro";
@@ -16,6 +17,7 @@ import Footer from "@/components/Footer.astro";
         <AboutMe />
         <Experience />
         <Education />
+        <Projects client:load />
         <LanguagesAndTools />
         <Certifications />
         <Footer />
