@@ -41,24 +41,26 @@ const Projects = () => {
             <Dialog key={`${project.title}-${index}`}>
               <DialogTrigger>
                 <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
-                  <CardContent className="p-4 space-y-4">
+                  <CardContent className="p-4">
                     <img
                       src={project.image}
                       alt={`${project.title} image`}
-                      className="w-full h-30"
+                      className="w-full h-80 md:h-32 object-cover rounded-lg mb-4"
                     />
 
-                    <div className="flex-col items-center justify-between space-y-2">
-                      <h3 className="font-medium">{project.title}</h3>
-                      <div className="flex flex-wrap gap-2">
-                        {project.stack.map((tech, index) => (
-                          <span
-                            key={`${tech}-${index}`}
-                            className="bg-gray-200 dark:bg-gray-700 text-sm px-2 py-1 rounded-md"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                    <div className="flex items-center justify-between">
+                      <div className="w-full space-y-2">
+                        <h3 className="font-medium">{project.title}</h3>
+                        <div className="flex flex-wrap gap-2 justify-center">
+                          {project.stack.map((tech, index) => (
+                            <span
+                              key={`${tech}-${index}`}
+                              className="bg-gray-200 dark:bg-gray-700 text-sm px-2 py-1 rounded-md"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </CardContent>

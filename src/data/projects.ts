@@ -26,7 +26,7 @@ export const projects = [
   {
     title: "Dotfiles",
     stack: ["Lua", "Shell", "Linux"],
-    image: "/images/placeholder-project.png",
+    image: "/images/project-dotfiles.png",
     summary:
       "My personal collection of dotfiles, featuring custom configurations for Neovim, Tmux, and other essential development tools. Designed for efficiency, minimalism, and portability across Linux systems.",
     link: "https://github.com/nnneninl/dotfiles",
