@@ -11,21 +11,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
   <div class="grid grid-cols-1 gap-3">
     {certifications.map((certificate) => (
-    <a href={certificate.href} target="_blank" rel="noopener noreferrer">
-      <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
-        <CardContent className="p-4">
-          <div class="flex items-center justify-between">
-            <div>
-              <h3 class="font-medium">{certificate.title}</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">{certificate.date}</p>
+    <a href={certificate.href} target="_blank" rel="noopener noreferrer" aria-label="See Certificate">
+        <Card className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <CardContent className="p-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-medium">{certificate.title}</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">{certificate.date}</p>
+              </div>
+            <Button variant="ghost" size="icon">
+              →
+            </Button>
             </div>
-          <Button variant="ghost" size="icon">
-            →
-          </Button>
-          </div>
-        </CardContent>
-      </Card>
-    </a>
+          </CardContent>
+        </Card>
+      </a>
     ))}
   </div>
 </section>

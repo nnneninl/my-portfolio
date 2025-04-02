@@ -1,6 +1,6 @@
 ---
+import Head from "@/components/Head.astro";
 import "@/styles/global.css";
-import { ClientRouter } from "astro:transitions";
 ---
 
 <script is:inline>
@@ -36,12 +36,7 @@ import { ClientRouter } from "astro:transitions";
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Neil Francis Palmares</title>
-    <ClientRouter />
+    <Head />
   </head>
   <body class="antialiased">
     <div class="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">

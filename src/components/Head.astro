@@ -1,0 +1,31 @@
+---
+import { ClientRouter } from "astro:transitions";
+---
+
+<!-- Global Metadata -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Primary Meta Tags -->
+<title>Neil Francis Palmares</title>
+<meta name="title" content="Neil Francis Palmares" />
+<meta name="description" content="Tech Enthusiast | Web Development & DevOps" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content="Neil Francis Palmares" />
+<meta property="og:description" content="Tech Enthusiast | Web Development & DevOps" />
+<meta property="og:image" content={new URL("/images/project-my-portfolio.png", Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content="Neil Francis Palmares" />
+<meta property="twitter:description" content="Tech Enthusist | Web Development & DevOps" />
+<meta property="twitter:image" content={new URL("/images/project-my-portfolio.png", Astro.url)} />
+
+<!-- Other -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<ClientRouter />
