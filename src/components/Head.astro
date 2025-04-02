@@ -1,5 +1,15 @@
 ---
 import { ClientRouter } from "astro:transitions";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const canonicalURL = Astro.url.toString()
+
+const { title, description, image = "/images/project-my-portfolio.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -7,24 +17,27 @@ import { ClientRouter } from "astro:transitions";
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
 
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
 <!-- Primary Meta Tags -->
-<title>Neil Francis Palmares</title>
-<meta name="title" content="Neil Francis Palmares" />
-<meta name="description" content="Tech Enthusiast | Web Development & DevOps" />
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://neilfranispalmares.com" />
-<meta property="og:title" content="Neil Francis Palmares" />
-<meta property="og:description" content="Tech Enthusiast | Web Development & DevOps" />
-<meta property="og:image" content={new URL("/images/project-my-portfolio.png", "https://neilfranispalmares.com")} />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://neilfranispalmares.com" />
-<meta property="twitter:title" content="Neil Francis Palmares" />
-<meta property="twitter:description" content="Tech Enthusist | Web Development & DevOps" />
-<meta property="twitter:image" content={new URL("/images/project-my-portfolio.png", "https://neilfranispalmares.com")} />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <!-- Other -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
